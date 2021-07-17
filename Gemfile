@@ -18,9 +18,6 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
 end
 
-# gh's dependabot told me there is a security issue with earlier versions of addressable
-gem "addressable", ">= 2.8.0"
-
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
